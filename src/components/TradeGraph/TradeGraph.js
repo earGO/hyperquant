@@ -5,6 +5,7 @@ import TradeGraphVerticalLines from "../TradeGraphVerticalLines/TradeGraphVertic
 import TradeGraphHorizontalLines from "../TradeGraphHorizontalLines/TradeGraphHorizontalLines";
 import TradeGraphDateMark from "../TradeGraphDateMark/TradeGraphDateMark";
 import TradeGraphMargin from "../TradeGraphMargin/TradeGraphMargin";
+import TradeGraphDates from "../TradeGraphDates/TradeGraphDates";
 
 const TradeGraph = () => {
     return (
@@ -14,6 +15,7 @@ const TradeGraph = () => {
             <TradeGraphHorizontalLines/>
             <TradeGraphDateMark/>
             <TradeGraphMargin/>
+            <TradeGraphDates/>
         </div>
 
     )
