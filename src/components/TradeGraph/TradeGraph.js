@@ -3,6 +3,8 @@ import Graph from "../Graph/Graph";
 import './TradeGraph.scss';
 import TradeGraphVerticalLines from "../TradeGraphVerticalLines/TradeGraphVerticalLines";
 import TradeGraphHorizontalLines from "../TradeGraphHorizontalLines/TradeGraphHorizontalLines";
+import TradeGraphDateMark from "../TradeGraphDateMark/TradeGraphDateMark";
+import TradeGraphMargin from "../TradeGraphMargin/TradeGraphMargin";
 
 const TradeGraph = () => {
     return (
@@ -10,6 +12,8 @@ const TradeGraph = () => {
             <Graph/>
             <TradeGraphVerticalLines/>
             <TradeGraphHorizontalLines/>
+            <TradeGraphDateMark/>
+            <TradeGraphMargin/>
         </div>
 
     )
