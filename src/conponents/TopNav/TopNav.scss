@@ -1,0 +1,19 @@
+@import "../../common/styles/global";
+
+.border-debug{
+  border:1px solid red;
+}
+
+.top-nav-container{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:$top-empty-margin;
+  left:5vw;
+  width: 100%;
+  height: $top-nav-height;
+}
+
+.screen-name{
+}

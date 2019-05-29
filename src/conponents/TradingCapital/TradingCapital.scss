@@ -1,0 +1,23 @@
+@import "../../common/styles/global";
+
+.border-debug{
+  border:1px solid red;
+}
+
+.trading-capital-container{
+  position: absolute;
+  display: flex;
+  top:6vh;
+}
+
+.capital-amount{
+  color:$white-font-color;
+}
+
+.balance-value{
+  color:$white-font-color;
+}
+
+.trading-capital-title{
+  text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+@import "../../common/styles/global";
+
+//svg{
+//  stroke:black;
+//  transform: scale(0.5);
+//}
+
+.graph-wrapper{
+  transform: scale(0.5);
+}
+
+.debug-border{
+  border:1px solid blue;
+}
+
+.svg-debug-border{
+  border:1px solid orange;
+}
+
+.svg-graph{
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+}
