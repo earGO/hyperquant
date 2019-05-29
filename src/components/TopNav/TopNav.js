@@ -6,7 +6,7 @@ import './TopNav.scss'
 
 const TopNav = () => {
     return (
-        <div className={'border-debug top-nav-container'}>
+        <div className={'top-nav-container'}>
             <NavbarSideToggleButton/>
             <h3 className={'screen-name'}>Dashboard</h3>
             <RefreshButton/>

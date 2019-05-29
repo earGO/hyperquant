@@ -1,9 +1,5 @@
 @import "../../common/styles/global";
 
-.border-debug{
-  border:1px solid red;
-}
-
 .top-nav-container{
   position: absolute;
   display: flex;
@@ -11,9 +7,10 @@
   justify-content: center;
   top:$top-empty-margin;
   left:5vw;
-  width: 100%;
+  width: 90vw;
   height: $top-nav-height;
 }
 
 .screen-name{
+  font-size: $top-nav-height*.75;
 }

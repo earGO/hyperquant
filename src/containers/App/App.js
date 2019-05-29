@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.scss';
-import Graph from "../../conponents/Graph/Graph";
-import TopNav from "../../conponents/TopNav/TopNav";
-import TradingCapital from "../../conponents/TradingCapital/TradingCapital";
+import Graph from "../../components/Graph/Graph";
+import TopNav from "../../components/TopNav/TopNav";
+import TradingCapital from "../../components/TradingCapital/TradingCapital";
 
 function App() {
   return (

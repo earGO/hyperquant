@@ -1,7 +1,7 @@
 @import "../../common/styles/global";
 
-$toggle-button-height:5vh;
-$toggle-button-width:5vh;
+$toggle-button-height: $top-nav-height;
+$toggle-button-width: $top-nav-height;
 
 .navbar-toggle-button{
   position: absolute;
