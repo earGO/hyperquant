@@ -1,28 +1,36 @@
 @import "../../common/styles/global";
 
-//svg{
-//  stroke:black;
-//  transform: scale(0.5);
-//}
-
 .graph-wrapper{
   position: absolute;
-  transform: scale(0.5);
-  top:40vh;
-}
-
-.debug-border{
-  border:1px solid blue;
-}
-
-.svg-debug-border{
-  border:1px solid orange;
-}
-
-.svg-graph{
-  position: absolute;
-  top:0;
-  left:0;
-  padding:0;
+  display: block;
+  top:-0.1vh;
   margin:0;
+  padding:0;
+  right: 0;
+  width: 100%;
+  height:$trading-graph-height;
+  border:1px solid red;
+}
+
+
+.graph-wrapper svg {
+  @include vendor('transform', 'scale(3.6) translate(-2.75%,40%)');
+  width:100%;
+  height:100%;
+}
+
+.graph-wrapper svg path:nth-of-type(2) {
+  stroke:$trade-graph-outline-color;
+  fill:$trade-graph-outline-color;
+}
+
+.graph-wrapper svg stop:nth-of-type(1){
+  stop-color:$trade-graph-fill-start-color;
+  offset:0%;
+  stop-opacity: 1;
+}
+.graph-wrapper svg stop:nth-of-type(2){
+  stop-color:$trade-graph-fill-end-color;
+  offset:100%;
+  stop-opacity: 0;
 }

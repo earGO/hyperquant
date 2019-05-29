@@ -1,0 +1,12 @@
+@import "../../common/styles/global";
+
+.trade-graph-container{
+  border: 1px solid orange;
+
+  position: absolute;
+  display: block;
+  height: $trading-graph-overall-height;
+  width: 100%;
+  top:$top-empty-margin+$top-nav-height+$trading-capital-height;
+  left: 0;
+}

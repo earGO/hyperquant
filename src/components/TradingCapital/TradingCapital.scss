@@ -1,16 +1,13 @@
 @import "../../common/styles/global";
 
-.border-debug{
-  border:1px solid red;
-}
 
 .trading-capital-container{
   position: absolute;
   display: flex;
   top:$top-empty-margin+$top-nav-height;
   left:$global-side-margin;
-  width: 92vw;
-  height:13vh;
+  width: 100vw-$global-side-margin*2;
+  height:$trading-capital-height;
   padding:0;
   margin:0;
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.scss';
-import Graph from "../../components/Graph/Graph";
 import TopNav from "../../components/TopNav/TopNav";
 import TradingCapital from "../../components/TradingCapital/TradingCapital";
+import TradeGraph from "../../components/TradeGraph/TradeGraph";
 
 function App() {
   return (
     <div className="App">
         <TopNav/>
         <TradingCapital/>
-        <Graph/>
+        <TradeGraph/>
     </div>
   );
 }
