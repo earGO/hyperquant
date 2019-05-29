@@ -1,0 +1,35 @@
+@import "../../common/styles/global";
+
+.trading-capital-on-hold-container{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  display: block;
+  left:62vw;
+  top:8.5vh;
+  font-size: 1.8vh;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 1.5vh;
+}
+
+.on-hold-num-container{
+  margin: 0;
+  padding: 0;
+  height: 1.5vh;
+  width:25vw;
+}
+
+.on-hold-title{
+  position: absolute;
+  display: block;
+  left:0;
+}
+
+.on-hold-value{
+  position: absolute;
+  display: block;
+  right:0;
+  color:$white-font-color;
+
+}

@@ -7,13 +7,22 @@
 .trading-capital-container{
   position: absolute;
   display: flex;
-  top:25vh;
-  width:100%;
-  height:30%;
+  top:$top-empty-margin+$top-nav-height;
+  left:$global-side-margin;
+  width: 92vw;
+  height:13vh;
+  padding:0;
+  margin:0;
 }
 
 .capital-amount{
+  position: absolute;
+  display: block;
+  top:6.05vh;
+  left:0;
   color:$white-font-color;
+  font-size: 4vh;
+  font-weight: 400;
 }
 
 .balance-value{
@@ -21,5 +30,14 @@
 }
 
 .trading-capital-title{
+  position:absolute;
+  display: block;
+  top:3vh;
+  left:0;
+  font-size: 1.8vh;
   text-transform: uppercase;
+}
+
+.move-down{
+  top:7.7vh;
 }

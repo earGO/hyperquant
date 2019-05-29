@@ -3,8 +3,8 @@ import './HButton.scss'
 
 const HButton = () => {
     return (
-        <div>
-            <svg className={'h-button-svg'}>
+        <div className={'h-button-svg'} >
+            <svg  viewBox={'0 0 100 100'}>
                 <path
                     d="M26 15C26 21.0751 21.0751 26 15 26C8.92487 26 4 21.0751 4 15C4 8.92487 8.92487 4 15 4C21.0751 4 26 8.92487 26 15ZM11 9.96875H13V14H17V10H19V20.5H17V16H13V20.5H11V9.96875Z"
                     fillRule="evenOdd"/>
