@@ -1,5 +1,36 @@
 @import "../../common/styles/global";
 
 .h-button-svg{
+  position: absolute;
+  display: block;
+  top:-0.05vh;
+  right: -5vw;
+  width:2.3vh;
+  height:2.3vh;
+}
+
+.h-button-svg svg {
+  @include vendor('transform', 'scale(2.5) translate(30%,30%)');
+  stroke:$main-bleak-color;
   fill:$main-bleak-color;
+  width:100%;
+  height:100%;
+
+}
+
+
+/* On screens that are 1440px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1440px) {
+  .h-button-svg{
+    top:-0.05vh;
+    right: -6vw;
+  }
+}
+
+/* On screens that are 750px wide or less, go from four columns to two columns */
+@media screen and (max-width: 750px) {
+  .h-button-svg{
+    top:0.1vh;
+    right: -5vw;
+  }
 }
