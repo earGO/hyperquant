@@ -33,9 +33,16 @@
   right:0;
   color:$white-font-color;
 }
-
 /* For screens that are more than 750px  */
 @media screen and (min-width: 751px) {
+  .trading-capital-on-hold-container{
+    left:54vw;
+    width:32vw;
+  }
+}
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 1126px) {
   .trading-capital-on-hold-container{
     left:56vw;
     width:30vw;

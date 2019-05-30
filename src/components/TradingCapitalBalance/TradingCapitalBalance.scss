@@ -37,6 +37,14 @@
 /* For screens that are more than 750px  */
 @media screen and (min-width: 751px) {
   .trading-capital-balance-container{
+    left:54vw;
+    width:32vw;
+  }
+}
+
+/* For screens that are more than 1125px  */
+@media screen and (min-width: 1127px) {
+  .trading-capital-balance-container{
     left:56vw;
     width:30vw;
   }
