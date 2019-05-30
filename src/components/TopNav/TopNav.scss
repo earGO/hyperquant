@@ -14,3 +14,20 @@
 .screen-name{
   font-size: $top-nav-height*.75;
 }
+
+.top-nav-gradient{
+  position: absolute;
+  display: block;
+  left:25vw;
+  top:-20vh;
+  width:50vw;
+  height:30vh;
+  @include radial-gradient((rgba(4,128,205,0.25) 0%, rgba(19,73,114,0) 71%, rgba(25,50,77,0) 100%));
+}
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  body {
+    background-color: blue;
+  }
+}

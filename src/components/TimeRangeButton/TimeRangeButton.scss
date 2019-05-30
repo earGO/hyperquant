@@ -15,10 +15,21 @@
   color:$timerange-letters-inactive;
 }
 
-.active{
-  border-color: $white-font-color;
+.time-range-button-active{
+  border-color:$white-font-color;
+  background-color: $trade-graph-fill-end-color;
 }
 
-.active h5{
+.time-range-button-active h5{
   color: $white-font-color;
+}
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .time-range-button h5{
+    font-size: 1.4vh;
+  }
+  .active h5{
+    color: $white-font-color;
+  }
 }

@@ -5,12 +5,13 @@
   margin: 0;
   position: absolute;
   display: block;
-  left:62vw;
+  left:60vw;
   top:6.2vh;
   font-size: 1.8vh;
   text-transform: uppercase;
   font-weight: 700;
   height: 1.5vh;
+  width:26vw;
 }
 
 .balance-num-container{
@@ -31,4 +32,12 @@
   display: block;
   right:0;
   color:$white-font-color;
+}
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .trading-capital-balance-container{
+    left:56vw;
+    width:30vw;
+  }
 }

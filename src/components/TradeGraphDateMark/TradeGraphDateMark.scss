@@ -6,7 +6,7 @@
   width:$trade-graph-date-mark-size;
   height:$trade-graph-date-mark-size;
   top: 5.1vh;
-  left:50%;
+  left:48.75%;
   @include vendor('transform', 'scale(0.5,0.5) translate(0,0)');
 }
 
@@ -21,3 +21,16 @@
   fill: $trade-graph-outline-color;
 }
 
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .trade-graph-date-mark-container{
+    top: 3.6vh;
+    left:48.55%;
+  }
+
+  .trade-graph-date-mark-container svg circle{
+    stroke-width: 3vw;
+    stroke: $trade-graph-outline-color;
+    fill: $trade-graph-outline-color;
+  }
+}

@@ -56,3 +56,29 @@
   left:90vw;
   height: 20.45vh;
 }
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .line1{
+    height: 18.1vh;
+  }
+
+  .line2{
+    left:30vw;
+    height: 20.3vh;
+  }
+
+  .line3{
+    left:50vw;
+    height: 19.7vh;
+  }
+
+  .line4{
+    left:70vw;
+    height: 18.5vh;
+  }
+
+  .line5{
+    height: 20.35vh;
+  }
+}
