@@ -10,21 +10,6 @@ import {connect} from "react-redux";
 import { getData,timePeriodAction,botSelectionAction } from './actions';
 
 
-/**
-
- *
- * Things to do as second pass
- * 1.
- * 2.
- * 3.
- * 4. media queries for Samsung S8
- * 6. Check all sizing and proportions once more
- *
- *
- */
-
-
-
 const mapStateToProps = (state) =>{
     return {
         data:state.dataReduser.data,
