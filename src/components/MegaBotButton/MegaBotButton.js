@@ -5,8 +5,7 @@ import { createActiveStyle } from '../../common/functions/botsFunctions';
 
 
 const MegaBotButton = ({bot,onBotSelection,selectedBotName}) => {
-    const containerStyle=createActiveStyle(bot.color===selectedBotName)
-    console.log(containerStyle)
+    const containerStyle=createActiveStyle(bot.color===selectedBotName);
     if(bot.margin>0){
         return (
                 <div className={containerStyle}

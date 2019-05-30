@@ -11,24 +11,17 @@ import { getData,timePeriodAction,botSelectionAction } from './actions';
 
 
 /**
- * Frontend logic:
- * 1. clickable bots buttons (just to change them style)
- * 2.
- * 3.
- * 4. Change bots margin numbers when diffrent timeRange buttons R clicked
- * 5. Make bots buttons generatablee by some kind of state (bot name, bot color - both from data)
+
  *
  * Things to do as second pass
- * 1. gradient and different styling of active bot button
- * 2. long sparkles from MegaBot
- * 3. Empty bot button
+ * 1. Check TradingGraphMark position in Iphone Layout
+ * 2. LOCAL STORAGE!!!!
+ * 3.
  * 4. media queries for Samsung S8
  * 5. Gradient bulb at the top of the screen, above the Dashboard
  * 6. Check all sizing and proportions once more
  * 7. Figure out BottomMenu active items highlight
  *
- * If U won't sleep and will make it on time
- * 1. Clickable bottom nav with mocked screens
  *
  */
 
@@ -56,7 +49,16 @@ class  App extends React.Component {
 
     componentDidMount = async ()=> {
         await this.props.onFetchData();
-    }
+    };
+
+    // componentWillUpdate(nextProps, nextState, nextContext) {
+    //     if(nextState){
+    //         localStorage.setItem('data', JSON.stringify(nextState.data))
+    //     } else {
+    //         localStorage.setItem('data', JSON.stringify(nextProps.data))
+    //     }
+    //
+    // }
 
     render(){
         const {data,onTimePeriodChange,timePeriod,onBotSelection,selectedBotName} = this.props;

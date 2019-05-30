@@ -10,10 +10,23 @@ import logger  from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 
 import { dataReduser,timePeriodReducer,botSelectionReducer } from "./containers/App/reducers";
+import { loadFromLocalStorage,saveState } from './common/functions/localStorage';
+
+const persistedState = loadFromLocalStorage();
+
+console.log('loaded state: ',persistedState);
 
 const rootReducer = combineReducers({ dataReduser,timePeriodReducer,botSelectionReducer });
 
-const store = createStore(rootReducer,applyMiddleware(logger,thunkMiddleware));
+const store = createStore(rootReducer,persistedState,applyMiddleware(logger,thunkMiddleware));
+
+console.log(store.getState());
+
+store.subscribe(()=>{
+    console.log(store.getState())
+    saveState({
+        state:store.getState()})
+});
 
 ReactDOM.render(<Provider store={store}>
                     <App />

@@ -17,10 +17,25 @@ I used sparate .scss file for each of bottom-menu items, though they all are pre
 
 This and some other not so elegant solutions all are in favor of speed. 
 
+### more than asked
+So I decided to do a little bit more, than was asked, and done additional interface functionality:
+1. Bot buttons are active (though they do nothing, except one can activate different bot-buttons)
+
+
+### less than markup
+1. I didn't quite got the event, in wich the SPARKLING BOLTS from Megabot appear. No logic or a hint in a brief or image-markup.
+2. I do not think my markup is 100% pixel-to-pixel good. But did all I could without consulting with designer. And without actual devices to test markup with.
+2.2. Tested it on my phone - looks good.
+3. I've couldn't figure out right gradient for an active bot-button, but decided to go with what found. It was 15-something hour of work - started to mistype letters.
+
+
 #### Postmortem
 
 Well, main trouble is a different screen ration on theese devices. So I did markup for the iPhone first (as the markup-image provided was for an iPhone).
 
 Then I've made all data fetching and logic work on an iPhone. And only then I've done some correction for the Galaxy. 
 
-Figma really helped me out in figuring 'vw' and 'vh' values for positioning and proportions. 
+Figma really helped me out in figuring 'vw' and 'vh' values for positioning and proportions.
+
+Brief had instructions on "no scrolling" - but I didn't understood, does the "slide up to hide adress bar" count as a scrolling, or not? If this markup is for the PWA - it doesn't :)
+ 
