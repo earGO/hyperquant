@@ -14,13 +14,11 @@ import { getData,timePeriodAction,botSelectionAction } from './actions';
 
  *
  * Things to do as second pass
- * 1. Check TradingGraphMark position in Iphone Layout
+ * 1.
  * 2.
  * 3.
  * 4. media queries for Samsung S8
- * 5. Gradient bulb at the top of the screen, above the Dashboard
  * 6. Check all sizing and proportions once more
- * 7. Figure out BottomMenu active items highlight
  *
  *
  */

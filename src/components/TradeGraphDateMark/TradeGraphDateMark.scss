@@ -6,7 +6,7 @@
   width:$trade-graph-date-mark-size;
   height:$trade-graph-date-mark-size;
   top: 5.1vh;
-  left:50%;
+  left:48.75%;
   @include vendor('transform', 'scale(0.5,0.5) translate(0,0)');
 }
 

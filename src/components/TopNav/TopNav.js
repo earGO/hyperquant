@@ -8,6 +8,7 @@ const TopNav = () => {
 
     return (
         <div className={'top-nav-container'} id={'top-nav-container'}>
+            <div className={'top-nav-gradient'}></div>
             <NavbarSideToggleButton/>
             <h3 className={'screen-name'}>Dashboard</h3>
             <RefreshButton/>
