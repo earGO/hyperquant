@@ -37,3 +37,19 @@
   stroke:$white-font-color;
   fill:$white-font-color;
 }
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .bottom-menu-item-container{
+    width:17vw;
+    height:6.8vh;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+  }
+  .bottom-menu-item-container h6{
+    color:$timerange-letters-inactive;
+    font-size:1.35vh;
+    letter-spacing: 0.25vw;
+    font-weight: 500;
+  }
+}

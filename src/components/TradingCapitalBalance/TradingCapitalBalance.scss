@@ -33,3 +33,11 @@
   right:0;
   color:$white-font-color;
 }
+
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .trading-capital-balance-container{
+    left:56vw;
+    width:30vw;
+  }
+}

@@ -21,3 +21,16 @@
   fill: $trade-graph-outline-color;
 }
 
+/* For screens that are more than 750px  */
+@media screen and (min-width: 751px) {
+  .trade-graph-date-mark-container{
+    top: 3.6vh;
+    left:48.55%;
+  }
+
+  .trade-graph-date-mark-container svg circle{
+    stroke-width: 3vw;
+    stroke: $trade-graph-outline-color;
+    fill: $trade-graph-outline-color;
+  }
+}

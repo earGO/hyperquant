@@ -14,7 +14,7 @@ const TimeRangeButton = (props) => {
         )
     } else {
         return (
-            <div className={'time-range-button active'}>
+            <div className={'time-range-button time-range-button-active'}>
                 <h5>{title}</h5>
             </div>
         )
