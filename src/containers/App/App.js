@@ -6,6 +6,8 @@ import TradeGraph from "../../components/TradeGraph/TradeGraph";
 import BotButtons from "../../components/BotButtons/BotButtons";
 import TimeRange from "../../components/TimeRange/TimeRange";
 import BottomMenu from "../../components/BottomMenu/BottomMenu";
+import {connect} from "react-redux";
+import { getData,timePeriodAction } from './actions';
 
 
 /**
@@ -30,18 +32,62 @@ import BottomMenu from "../../components/BottomMenu/BottomMenu";
  *
  */
 
+const dataMock={
+    balance: 14630,
+    bots: {
+        0: {
+            name: "yellow_bot",
+            cost: 10000,
+            '24h': 3.15,
+            '7d': 0.065,
+            '30d': 4.1,
+        },
+    },
+        on_hold: 8300,
+        trading_capital: 3.081,
+        trading_capital_currency: "eth"
+};
 
-function App() {
-  return (
-    <div className="App">
-        <TopNav/>
-        <TradingCapital/>
-        <TradeGraph/>
-        <BotButtons/>
-        <TimeRange/>
-        <BottomMenu/>
-    </div>
-  );
+
+const mapStateToProps = (state) =>{
+    return {
+        data:state.dataReduser.data,
+        dataIsPending:state.dataReduser.dataIsPending,
+        dataError: state.dataReduser.dataError,
+        timePeriod:state.timePeriodReducer.timePeriod
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onFetchData:() => getData(dispatch), //Data fetcher
+        onTimePeriodChange:(timePeriod) => dispatch(timePeriodAction(timePeriod)), //the method for switching time-periods
+    }
+};
+
+class  App extends React.Component {
+
+    componentDidMount = async ()=> {
+        await this.props.onFetchData();
+        console.log(this.props);
+    }
+
+    render(){
+        const {data,onTimePeriodChange,timePeriod} = this.props;
+        const { on_hold,trading_capital,trading_capital_currency,balance,bots } = data;
+        console.log(onTimePeriodChange);
+        return (
+            <div className="App">
+                <TopNav/>
+                <TradingCapital on_hold={on_hold} trading_capital={trading_capital} trading_capital_currency={trading_capital_currency} balance={balance}/>
+                <TradeGraph/>
+                <BotButtons bots={bots}/>
+                <TimeRange onTimePeriodChange={onTimePeriodChange} timePeriod={timePeriod}/>
+                <BottomMenu/>
+            </div>
+        );
+    }
+
 }
 
-export default App;
+export default connect(mapStateToProps,mapDispatchToProps)(App);
