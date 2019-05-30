@@ -4,7 +4,7 @@
   position: absolute;
   top:$top-empty-margin+$top-nav-height+$trading-capital-height+$trading-graph-overall-height+2vh;
   left: $global-side-margin;
-  height:30vh;
+  height:$bot-buttons-height;
   width:92vw;
   display: grid;
   grid-template-rows: repeat(3,1fr);

@@ -4,6 +4,7 @@ import TopNav from "../../components/TopNav/TopNav";
 import TradingCapital from "../../components/TradingCapital/TradingCapital";
 import TradeGraph from "../../components/TradeGraph/TradeGraph";
 import BotButtons from "../../components/BotButtons/BotButtons";
+import TimeRange from "../../components/TimeRange/TimeRange";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <TradingCapital/>
         <TradeGraph/>
         <BotButtons/>
+        <TimeRange/>
     </div>
   );
 }

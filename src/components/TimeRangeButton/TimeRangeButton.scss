@@ -1,0 +1,24 @@
+@import "../../common/styles/global";
+
+.time-range-button{
+  display: flex;
+  height: $time-range-button-height;
+  width: $time-range-button-width;
+  border:1px solid $timerange-border-inactive;
+  border-radius: $time-range-button-height*.8;
+  align-items: center;
+  justify-content: center;
+}
+.time-range-button h5{
+  font-size: 1.8vh;
+  display: block;
+  color:$timerange-letters-inactive;
+}
+
+.active{
+  border-color: $white-font-color;
+}
+
+.active h5{
+  color: $white-font-color;
+}

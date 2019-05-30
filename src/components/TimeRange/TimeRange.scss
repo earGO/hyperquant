@@ -1,0 +1,30 @@
+@import "../../common/styles/global";
+
+.time-range-container{
+  position: absolute;
+  display: block;
+  top:$top-empty-margin+$top-nav-height+$trading-capital-height+$trading-graph-overall-height+2vh+$bot-buttons-height+2vh;
+  width:92vw;
+  left:$global-side-margin;
+  height:$time-range-menu-height;
+  font-size: 2vh;
+  font-weight: 600;
+}
+
+.time-range-buttons-container{
+  position: absolute;
+  top:0;
+  right:0;
+  width: 75%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time-range-container p{
+  position:absolute;
+  display: block;
+  top:0.6vh;
+  left:1vw;
+}
