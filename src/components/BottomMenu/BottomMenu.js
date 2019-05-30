@@ -1,9 +1,11 @@
 import React from 'react';
+import './BottomMenu.scss'
+import BottomNavDashboard from "../BottomNavDashboard/BottomNavDashboard";
 
 const BottomMenu = () => {
     return (
-        <div>
-            <p>This is a BottomMenu dumb React Component</p>
+        <div className={'bottom-menu-container'}>
+            <BottomNavDashboard/>
         </div>
 
     )

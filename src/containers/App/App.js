@@ -5,6 +5,7 @@ import TradingCapital from "../../components/TradingCapital/TradingCapital";
 import TradeGraph from "../../components/TradeGraph/TradeGraph";
 import BotButtons from "../../components/BotButtons/BotButtons";
 import TimeRange from "../../components/TimeRange/TimeRange";
+import BottomMenu from "../../components/BottomMenu/BottomMenu";
 
 
 /**
@@ -38,6 +39,7 @@ function App() {
         <TradeGraph/>
         <BotButtons/>
         <TimeRange/>
+        <BottomMenu/>
     </div>
   );
 }
