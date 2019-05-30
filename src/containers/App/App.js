@@ -13,10 +13,10 @@ import { getData,timePeriodAction } from './actions';
 /**
  * Frontend logic:
  * 1. clickable bots buttons (just to change them style)
- * 2. Load JSONfile with data
- * 3. Make timerange buttons clickable
+ * 2.
+ * 3.
  * 4. Change bots margin numbers when diffrent timeRange buttons R clicked
- *5. Make bots buttons generable by some kind of state (bot name, bot color - both from data)
+ * 5. Make bots buttons generatablee by some kind of state (bot name, bot color - both from data)
  *
  * Things to do as second pass
  * 1. gradient and different styling of active bot button
@@ -69,19 +69,17 @@ class  App extends React.Component {
 
     componentDidMount = async ()=> {
         await this.props.onFetchData();
-        console.log(this.props);
     }
 
     render(){
         const {data,onTimePeriodChange,timePeriod} = this.props;
         const { on_hold,trading_capital,trading_capital_currency,balance,bots } = data;
-        console.log(onTimePeriodChange);
         return (
             <div className="App">
                 <TopNav/>
                 <TradingCapital on_hold={on_hold} trading_capital={trading_capital} trading_capital_currency={trading_capital_currency} balance={balance}/>
                 <TradeGraph/>
-                <BotButtons bots={bots}/>
+                <BotButtons bots={bots} timePeriod={timePeriod}/>
                 <TimeRange onTimePeriodChange={onTimePeriodChange} timePeriod={timePeriod}/>
                 <BottomMenu/>
             </div>

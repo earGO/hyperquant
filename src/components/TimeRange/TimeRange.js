@@ -25,7 +25,6 @@ const timeRanges=[
 ];
 
 const TimeRange = ({onTimePeriodChange,timePeriod}) => {
-    console.log(timePeriod);
     return (
         <div className={'time-range-container'}>
             <p>Time range:</p>
