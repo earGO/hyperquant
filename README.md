@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The test task for a job of a fronted developer fo HyperQuant
 
 #### About
@@ -24,3 +25,7 @@ Well, main trouble is a different screen ration on theese devices. So I did mark
 Then I've made all data fetching and logic work on an iPhone. And only then I've done some correction for the Galaxy. 
 
 Figma really helped me out in figuring 'vw' and 'vh' values for positioning and proportions. 
+=======
+# hyperquant
+A repo for a test task for a HyperQuant
+>>>>>>> 42badb6750dd52b43c72bdea3cd3c66472796b52
