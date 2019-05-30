@@ -1,5 +1,9 @@
 The test task for a job of a fronted developer fo HyperQuant
 
+The task: https://github.com/pvrogov/test-tasks/tree/master/frontend
+
+App deployed:https://hyper-quant-test-job.herokuapp.com/
+
 #### About
 
 The goal was to create responsive layout for  iPhone 6S - 750x1334 pixels, and for Samsung Galaxy S8 Plus - 2960x1440 pixels.
