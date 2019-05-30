@@ -2,6 +2,7 @@ import React from 'react';
 import './BotButtons.scss';
 import BotButton from "../BotButton/BotButton";
 import MegaBotButton from "../MegaBotButton/MegaBotButton";
+import { megaBotPicker,botColorShortName } from '../../common/functions/botsFunctions';
 
 
 /**
@@ -14,38 +15,28 @@ import MegaBotButton from "../MegaBotButton/MegaBotButton";
  * */
 
 
-const megaBotPicker = (arrayOfBots)=>{
-    let maximumCost = 0;
-    let botName = '';
-    arrayOfBots.forEach(bot=>{
-        if(bot.cost>maximumCost){
-            maximumCost = bot.cost;
-            botName = bot.name;
-        }
-    });
-    return botName;
-};
-
-
-
-const BotButtons = ({bots,timePeriod}) => {
+const BotButtons = ({bots,timePeriod,...other}) => {
     if(bots){
         let margin=0;
+        let color='';
         let megaBotName = megaBotPicker(bots);
         return (
             <div className={'bot-buttons-container'}>
                 {
                     bots.map((bot,key)=>{
-                        margin=bot[timePeriod]
+                        margin=bot[timePeriod];
+                        color=botColorShortName(bot);
                         const botToPass={
                             name:bot.name,
-                            margin:margin
-                        }
+                            margin:margin,
+                            color:color
+                        };
                         if(bot.name===megaBotName){
                             return(
                                 <MegaBotButton
                                     key={key}
                                     bot={botToPass}
+                                    {...other}
                                 />
                             )
                         } else {
@@ -53,6 +44,7 @@ const BotButtons = ({bots,timePeriod}) => {
                                 <BotButton
                                     key={key}
                                     bot={botToPass}
+                                    {...other}
                                 />
                             )
                         }

@@ -9,9 +9,9 @@ import { createStore, applyMiddleware, combineReducers } from "redux";
 import logger  from 'redux-logger';
 import thunkMiddleware from 'redux-thunk';
 
-import { dataReduser,timePeriodReducer } from "./containers/App/reducers";
+import { dataReduser,timePeriodReducer,botSelectionReducer } from "./containers/App/reducers";
 
-const rootReducer = combineReducers({ dataReduser,timePeriodReducer });
+const rootReducer = combineReducers({ dataReduser,timePeriodReducer,botSelectionReducer });
 
 const store = createStore(rootReducer,applyMiddleware(logger,thunkMiddleware));
 

@@ -30,4 +30,17 @@ export const timePeriodReducer = (state=initialTimePeriod,action={})=> {
         default:
             return state;
     }
-}
+};
+
+const initialSelectedBot = {
+    selectedBotName:'yellow'
+};
+
+export const botSelectionReducer = (state=initialSelectedBot,action={})=> {
+    switch(action.type){
+        case CONSTANTS.BOT_SELECTED:
+            return {...state,selectedBotName:action.payload};
+        default:
+            return state;
+    }
+};

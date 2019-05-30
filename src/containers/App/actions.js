@@ -25,3 +25,8 @@ export const timePeriodAction = (timePeriod) => ({
     type:CONSTANTS.TIME_PERIOD,
     payload:timePeriod
 });
+
+export const botSelectionAction = (selectedBotName) => ({
+    type:CONSTANTS.BOT_SELECTED,
+    payload:selectedBotName
+});

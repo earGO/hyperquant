@@ -7,7 +7,7 @@ import BotButtons from "../../components/BotButtons/BotButtons";
 import TimeRange from "../../components/TimeRange/TimeRange";
 import BottomMenu from "../../components/BottomMenu/BottomMenu";
 import {connect} from "react-redux";
-import { getData,timePeriodAction } from './actions';
+import { getData,timePeriodAction,botSelectionAction } from './actions';
 
 
 /**
@@ -32,21 +32,6 @@ import { getData,timePeriodAction } from './actions';
  *
  */
 
-const dataMock={
-    balance: 14630,
-    bots: {
-        0: {
-            name: "yellow_bot",
-            cost: 10000,
-            '24h': 3.15,
-            '7d': 0.065,
-            '30d': 4.1,
-        },
-    },
-        on_hold: 8300,
-        trading_capital: 3.081,
-        trading_capital_currency: "eth"
-};
 
 
 const mapStateToProps = (state) =>{
@@ -54,7 +39,8 @@ const mapStateToProps = (state) =>{
         data:state.dataReduser.data,
         dataIsPending:state.dataReduser.dataIsPending,
         dataError: state.dataReduser.dataError,
-        timePeriod:state.timePeriodReducer.timePeriod
+        timePeriod:state.timePeriodReducer.timePeriod,
+        selectedBotName:state.botSelectionReducer.selectedBotName
     }
 };
 
@@ -62,6 +48,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         onFetchData:() => getData(dispatch), //Data fetcher
         onTimePeriodChange:(timePeriod) => dispatch(timePeriodAction(timePeriod)), //the method for switching time-periods
+        onBotSelection:(botName) => dispatch(botSelectionAction(botName)) //method for selecting bots with buttons
     }
 };
 
@@ -72,14 +59,14 @@ class  App extends React.Component {
     }
 
     render(){
-        const {data,onTimePeriodChange,timePeriod} = this.props;
+        const {data,onTimePeriodChange,timePeriod,onBotSelection,selectedBotName} = this.props;
         const { on_hold,trading_capital,trading_capital_currency,balance,bots } = data;
         return (
             <div className="App">
                 <TopNav/>
                 <TradingCapital on_hold={on_hold} trading_capital={trading_capital} trading_capital_currency={trading_capital_currency} balance={balance}/>
                 <TradeGraph/>
-                <BotButtons bots={bots} timePeriod={timePeriod}/>
+                <BotButtons bots={bots} timePeriod={timePeriod} onBotSelection={onBotSelection} selectedBotName={selectedBotName}/>
                 <TimeRange onTimePeriodChange={onTimePeriodChange} timePeriod={timePeriod}/>
                 <BottomMenu/>
             </div>

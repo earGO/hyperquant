@@ -41,21 +41,10 @@
   grid-gap: 0;
 }
 
-.light-bot{
-  background-color: red;
-  border:1px solid red;
-  border:0;
-  margin:0;
-  padding:0;
-}
-
-.dark-bot{
-  background-color: darkred;
-  border:0;
-  margin:0;
-  padding:0;
-}
-
 .button-container:hover{
   transform: scale(1.01);
+}
+
+.bot-active{
+  @include radial-gradient((circle, rgba(36,0,16,0.773546918767507) 11%, rgba(26,52,80,1) 100%));
 }

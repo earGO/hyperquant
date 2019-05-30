@@ -1,6 +1,6 @@
 @import "../../common/styles/global";
 
-.button-container{
+.megabot-button-container{
   width: $bot-button-width;
   height:$bot-button-height;
   display: flex;
@@ -33,3 +33,8 @@
   grid-template-rows:repeat(14,1fr);
   grid-gap: 0;
 }
+
+.bot-active{
+  @include radial-gradient((circle, rgba(36,0,16,0.773546918767507) 11%, rgba(26,52,80,1) 100%));
+}
+

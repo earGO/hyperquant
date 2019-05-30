@@ -6,3 +6,7 @@ export const DATA_REQUEST_FAILED = 'DATA_REQUEST_FAILED';
 
 /*time-period constant*/
 export const TIME_PERIOD = 'TIME_PERIOD';
+
+/*bot selection constant*/
+export const BOT_SELECTED = 'BOT_SELECTED';
+
