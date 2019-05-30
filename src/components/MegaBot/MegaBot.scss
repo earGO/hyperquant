@@ -1,0 +1,19 @@
+@import "../../common/styles/global";
+
+.megabot-container{
+  display: block;
+  top:-0.1vh;
+  right: 0;
+  width:12vw;
+  height:5.2vh;
+}
+
+
+.megabot-container svg {
+  @include vendor('transform', 'scale(1.5) translate(0,0)');
+  stroke:$yellow-bot-dark;
+  fill:$yellow-bot-light;
+  width:100%;
+  height:100%;
+
+}

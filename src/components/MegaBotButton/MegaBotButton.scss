@@ -1,0 +1,35 @@
+@import "../../common/styles/global";
+
+.button-container{
+  width: $bot-button-width;
+  height:$bot-button-height;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8vh;
+  transition: 0.4s all ease-in-out;
+  background-color: $bot-button-background-color;
+}
+.bot-name{
+  font-size: 2vh;
+  text-transform: uppercase;
+  padding-top: 1.1vh;
+  color:$white-font-color;
+}
+.megabot-margin{
+  font-size: 2vh;
+  text-transform: uppercase;
+  padding-top: 0.1vh;
+  color:$trade-margin-color;
+}
+
+.bot-icon-container{
+  display: grid;
+  width:12vw;
+  height:5.2vh;
+  padding-top: 1vh;
+  grid-template-columns:repeat(18,1fr);
+  grid-template-rows:repeat(14,1fr);
+  grid-gap: 0;
+}

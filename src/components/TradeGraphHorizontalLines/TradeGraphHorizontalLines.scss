@@ -1,0 +1,21 @@
+@import "../../common/styles/global";
+
+.vertical-lines-flex-container{
+  position: absolute;
+  display: flex;
+  top:0;
+  left:0;
+  width: 100%;
+  height: $trading-graph-height*1.01;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.vertical-lines-flex-container hr{
+  width:100%;
+  padding:0;
+  margin: 0;
+  border: 1px solid $trading-graph-horisontal-lines;
+  opacity: 0.5;
+  @include vendor('transform', 'scale(1,0.25)');
+}

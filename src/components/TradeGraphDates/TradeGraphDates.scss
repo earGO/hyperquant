@@ -1,0 +1,19 @@
+@import "../../common/styles/global";
+
+.trade-graph-dates-container{
+  position: absolute;
+  margin-left: $global-side-margin*2;
+  bottom:0;
+  display: flex;
+  width: 85vw;
+  height: $trading-graph-height - $trading-graph-overall-height;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trade-graph-dates-container p{
+  width:5vw;
+  height:1.2vh;
+  font-size: 1.2vh;
+}

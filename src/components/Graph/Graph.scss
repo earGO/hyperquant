@@ -3,13 +3,13 @@
 .graph-wrapper{
   position: absolute;
   display: block;
-  top:-0.1vh;
+  top:-2vh;
   margin:0;
   padding:0;
   right: 0;
   width: 100%;
-  height:$trading-graph-height;
-  border:1px solid red;
+  height:$trading-graph-height*1.08;
+  //border:1px solid red;
 }
 
 
