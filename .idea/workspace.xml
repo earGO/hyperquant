@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="191460f5-4e7d-4b2a-88b3-ab8fe74c6c5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/styles/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/styles/colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/styles/sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/styles/sizing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomNavDashboard/BottomNavDashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomNavDashboard/BottomNavDashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomNavDashboard/BottomNavDashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomNavDashboard/BottomNavDashboard.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/App.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BottomMenuProfile/BottomMenuProfile.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -94,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="210">
+              <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -175,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/components/BottomNavDashboard/BottomNavDashboard.js" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuCoinPrices/BottomMenuCoinPrices.test.js" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuCoinPrices/BottomMenuCoinPrices.js" />
-        <option value="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss" />
         <option value="$PROJECT_DIR$/src/containers/App/App.js" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuCoinPrices/BottomMenuCoinPrices.scss" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuProfile/BottomMenuProfile.test.js" />
@@ -185,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/common/styles/colors.scss" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuProfile/BottomMenuProfile.js" />
         <option value="$PROJECT_DIR$/src/components/BottomMenuProfile/BottomMenuProfile.scss" />
+        <option value="$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss" />
       </list>
     </option>
   </component>
@@ -346,7 +339,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48291000" />
+    <option name="totallyTimeSpent" value="48356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1917" y="0" width="1926" height="1083" extended-state="6" />
@@ -354,10 +347,10 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21088795" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21088795" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3296582" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3296582" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
@@ -710,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BottomMenuBotMarket/BottomMenuBotMarket.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -768,16 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/styles/sizing.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -806,6 +782,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BottomMenu/BottomMenu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
