@@ -10,7 +10,7 @@
 }
 
 .botmarket-icon-container svg{
-  @include vendor('transform', 'scale(3) translate(10%,35%)');
+  @include vendor('transform', 'scale(2.8) translate(10%,28%)');
   stroke:$timerange-letters-inactive;
   fill:$timerange-letters-inactive;
   width:100%;
