@@ -1,6 +1,7 @@
 import React from 'react';
 import './BotButtons.scss';
 import BotButton from "../BotButton/BotButton";
+import MegaBotButton from "../MegaBotButton/MegaBotButton";
 
 const BotButtons = () => {
     return (
@@ -9,7 +10,7 @@ const BotButtons = () => {
             <BotButton/>
             <BotButton/>
             <BotButton/>
-            <BotButton/>
+            <MegaBotButton/>
             <BotButton/>
         </div>
 

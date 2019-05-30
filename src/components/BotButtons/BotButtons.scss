@@ -6,8 +6,8 @@
   left: $global-side-margin;
   height:30vh;
   width:92vw;
-  border:1px solid orange;
   display: grid;
   grid-template-rows: repeat(3,1fr);
   grid-template-columns: repeat(3,1fr);
+  grid-gap: 2px;
 }
