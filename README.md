@@ -13,6 +13,10 @@ I left tests intentionaly, just to show that I'm using them :) Haven't covered b
 
 Though customer provided png's with icons and graphs and stuff, I thought this is good one to actually make markup with no files other than HTML, CSS, and some minor JS for logic inside React components themselves. I liked to show-off some svg-magic to one of my friends - so here ve are. 
 
+I used sparate .scss file for each of bottom-menu items, though they all are pretty the same. The difference sometimes is in scale and translate transforms of each SVG, so in Ver-1 I decided to keep things like that. It certainly needs refactoring, if development to be comntinued.
+
+This and some other not so elegant solutions all are in favor of speed. 
+
 #### Postmortem
 
 Well, main trouble is a different screen ration on theese devices. So I did markup for the iPhone first (as the markup-image provided was for an iPhone).

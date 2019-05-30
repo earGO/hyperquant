@@ -23,7 +23,7 @@ import BottomMenu from "../../components/BottomMenu/BottomMenu";
  * 4. media queries for Samsung S8
  * 5. Gradient bulb at the top of the screen, above the Dashboard
  * 6. Check all sizing and proportions once more
- * 7.
+ * 7. Figure out BottomMenu active items highlight
  *
  * If U won't sleep and will make it on time
  * 1. Clickable bottom nav with mocked screens

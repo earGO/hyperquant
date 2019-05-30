@@ -1,14 +1,5 @@
 @import "../../common/styles/global";
 
-.dashboard-container{
-  position: absolute;
-  display: flex;
-  top:1vh;
-  width:14vw;
-  height:6.4vh;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-}
 
 .dashboard-icon-container{
   display: flex;
@@ -37,17 +28,4 @@
   height:100%;
 }
 
-.dashboard-container h6{
-  color:$timerange-letters-inactive;
-  font-size:1.5vh;
-  letter-spacing: 0.25vw;
-}
 
-.active h6{
-  color: $white-font-color;
-}
-
-.active svg{
-  stroke:$white-font-color;
-  fill:$white-font-color;
-}

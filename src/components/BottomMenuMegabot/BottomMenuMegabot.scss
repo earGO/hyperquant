@@ -1,0 +1,18 @@
+@import "../../common/styles/global";
+
+.megabot-icon-svg-container{
+  display: block;
+  top:-0.1vh;
+  right: 0;
+  width:10vw;
+  height:1vh;
+  @include vendor('transform', 'scale(1.1,1.1)');
+}
+
+.megabot-icon-svg-container svg{
+  @include vendor('transform', 'scale(9,9) translate(6.8%,45%)');
+  stroke:$timerange-letters-inactive;
+  stroke-width: 0.2vh;
+  width:100%;
+  height:100%;
+}

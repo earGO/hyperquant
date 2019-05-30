@@ -1,0 +1,18 @@
+@import "../../common/styles/global";
+
+.botmarket-icon-container{
+  display: flex;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3.5vh;
+}
+
+.botmarket-icon-container svg{
+  @include vendor('transform', 'scale(3) translate(10%,35%)');
+  stroke:$timerange-letters-inactive;
+  fill:$timerange-letters-inactive;
+  width:100%;
+  height:100%;
+}
