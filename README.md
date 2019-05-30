@@ -8,7 +8,7 @@ So I didn't bother to write media-queries for other displays (and on desktop it 
 
 The app can be viewed live at the https://hyper-quant-test-job.herokuapp.com/ (I've deployed it to Heroku for testing)
 
-###about repo
+#### about repo
 I left tests intentionaly, just to show that I'm using them :) Haven't covered by test all I could, 'cause took incredible timing upon myself.
 
 Though customer provided png's with icons and graphs and stuff, I thought this is good one to actually make markup with no files other than HTML, CSS, and some minor JS for logic inside React components themselves. I liked to show-off some svg-magic to one of my friends - so here ve are. 
@@ -19,7 +19,7 @@ This and some other not so elegant solutions all are in favor of speed.
 
 ### more than asked
 So I decided to do a little bit more, than was asked, and done additional interface functionality:
-1. Bot buttons are active (though they do nothing, except one can activate different bot-buttons)
+Bot buttons are active (though they do nothing, except one can activate different bot-buttons)
 
 
 ### less than markup
