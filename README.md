@@ -21,11 +21,6 @@ I used sparate .scss file for each of bottom-menu items, though they all are pre
 
 This and some other not so elegant solutions all are in favor of speed. 
 
-### more than asked
-So I decided to do a little bit more, than was asked, and done additional interface functionality:
-Bot buttons are active (though they do nothing, except one can activate different bot-buttons)
-
-
 ### less than markup
 1. I didn't quite got the event, in wich the SPARKLING BOLTS from Megabot appear. No logic or a hint in a brief or image-markup.
 2. I do not think my markup is 100% pixel-to-pixel good. But did all I could without consulting with designer. And without actual devices to test markup with.
